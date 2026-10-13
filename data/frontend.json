@@ -1,0 +1,1122 @@
+{
+  "title": "Frontend Developer Roadmap",
+  "subtitle": "roadmap.sh-ийн Frontend замын зураглал. Сэдэв дээр дарж тайлбар үзээд, сурч дууссан бол тэмдэглээрэй. Явц хөтөч дээр хадгалагдана.",
+  "sections": [
+    {
+      "id": "internet",
+      "title": "Internet",
+      "topics": [
+        {
+          "id": "how-internet",
+          "title": "How does the internet work?",
+          "description": "Компьютерууд сүлжээгээр холбогдож мэдээлэл солилцдог. Браузер сервер рүү хүсэлт илгээж, сервер хариу буцаадаг.",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works"
+            }
+          ]
+        },
+        {
+          "id": "http",
+          "title": "What is HTTP?",
+          "description": "Браузер ба серверийн харилцах протокол. GET, POST зэрэг method, 200/404/500 зэрэг статус кодуудыг мэдэх хэрэгтэй.",
+          "links": [
+            {
+              "label": "MDN: HTTP",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP"
+            }
+          ]
+        },
+        {
+          "id": "domain",
+          "title": "What is Domain Name?",
+          "description": "Хүнд ойлгомжтой сайтын нэр (example.com). IP хаягийн оронд ашигладаг.",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_domain_name"
+            }
+          ]
+        },
+        {
+          "id": "hosting",
+          "title": "What is hosting?",
+          "description": "Сайтын файлуудыг интернэтэд байнга ажиллаж байдаг сервер дээр байрлуулах үйлчилгээ.",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_web_server"
+            }
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "DNS and how it works?",
+          "description": "Домэйн нэрийг IP хаяг руу хөрвүүлдэг системийг DNS гэнэ. Утасны лавлах шиг ажилладаг.",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Glossary/DNS"
+            }
+          ]
+        },
+        {
+          "id": "browsers",
+          "title": "Browsers and how they work?",
+          "description": "Браузер HTML, CSS-ийг уншиж DOM мод барьж дэлгэцэнд зурдаг. Chrome, Firefox, Safari-ийн ялгааг мэд.",
+          "links": [
+            {
+              "label": "web.dev",
+              "url": "https://web.dev/articles/howbrowserswork"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "html",
+      "title": "HTML",
+      "topics": [
+        {
+          "id": "html-basics",
+          "title": "Learn the basics",
+          "description": "Tag, attribute, хуудасны гол бүтэц (head, body).",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content"
+            }
+          ]
+        },
+        {
+          "id": "semantic",
+          "title": "Writing Semantic HTML",
+          "description": "header, nav, main, article, footer зэрэг утга бүхий tag ашиглах. Хайлт болон дэлгэц уншигчид тустай.",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Glossary/Semantics"
+            }
+          ]
+        },
+        {
+          "id": "forms",
+          "title": "Forms and Validations",
+          "description": "input, select, textarea, button болон required, pattern зэрэг шалгалтууд.",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms"
+            }
+          ]
+        },
+        {
+          "id": "a11y",
+          "title": "Accessibility",
+          "description": "Хараа, сонсголын бэрхшээлтэй хүмүүст ч ашиглагдах сайт. alt текст, label, ARIA, гараар удирдах.",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility"
+            }
+          ]
+        },
+        {
+          "id": "seo",
+          "title": "SEO Basics",
+          "description": "Хайлтын системд сайтыг олдох болгох: title, meta, гарчиг, хурд, semantic бүтэц.",
+          "links": [
+            {
+              "label": "web.dev",
+              "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "css",
+      "title": "CSS",
+      "topics": [
+        {
+          "id": "css-basics",
+          "title": "Learn the basics",
+          "description": "Selector, өнгө, фонт, box model (margin, border, padding).",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics"
+            }
+          ]
+        },
+        {
+          "id": "layouts",
+          "title": "Making Layouts",
+          "description": "Flexbox, Grid, position ашиглан хуудасны байршил зохион байгуулах.",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout"
+            }
+          ]
+        },
+        {
+          "id": "responsive",
+          "title": "Responsive Design",
+          "description": "Утас, таблет, компьютер дээр зөв харагддаг болгох. Media query, mobile-first.",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_design"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "js",
+      "title": "JavaScript",
+      "topics": [
+        {
+          "id": "js-basics",
+          "title": "Learn the Basics",
+          "description": "Хувьсагч, төрөл, нөхцөл, давталт, функц, объект, массив.",
+          "links": [
+            {
+              "label": "javascript.info",
+              "url": "https://javascript.info/"
+            }
+          ]
+        },
+        {
+          "id": "dom",
+          "title": "Learn DOM Manipulation",
+          "description": "JavaScript-ээр хуудасны элементийг хайх, өөрчлөх, event сонсох.",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+            }
+          ]
+        },
+        {
+          "id": "fetch",
+          "title": "Fetch API / Ajax (XHR)",
+          "description": "Хуудсыг дахин ачаалахгүйгээр серверээс өгөгдөл татах. Promise, async/await-тай хамт сур.",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vcs",
+      "title": "Version Control Systems",
+      "topics": [
+        {
+          "id": "git",
+          "title": "Git",
+          "description": "Кодын өөрчлөлтийг хувилбараар хадгалах хэрэгсэл. commit, branch, merge.",
+          "links": [
+            {
+              "label": "Git book",
+              "url": "https://git-scm.com/book/en/v2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vcs-hosting",
+      "title": "VCS Hosting",
+      "topics": [
+        {
+          "id": "github",
+          "title": "GitHub",
+          "description": "Git репозиторийг онлайнаар хадгалах, багаар ажиллах хамгийн түгээмэл платформ.",
+          "links": [
+            {
+              "label": "GitHub Docs",
+              "url": "https://docs.github.com/"
+            }
+          ]
+        },
+        {
+          "id": "gitlab",
+          "title": "GitLab",
+          "description": "GitHub-тэй төстэй платформ. CI/CD багтсан.",
+          "links": [
+            {
+              "label": "GitLab Docs",
+              "url": "https://docs.gitlab.com/"
+            }
+          ]
+        },
+        {
+          "id": "bitbucket",
+          "title": "Bitbucket",
+          "description": "Atlassian-ы Git хостинг. Jira-тай сайн холбогдоно.",
+          "links": [
+            {
+              "label": "Bitbucket",
+              "url": "https://bitbucket.org/product/guides"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pkg",
+      "title": "Package Managers",
+      "topics": [
+        {
+          "id": "npm",
+          "title": "npm",
+          "description": "Node.js-ийн үндсэн package manager. Гадны сан суулгаж төслийн хамаарлыг удирдана.",
+          "links": [
+            {
+              "label": "npm Docs",
+              "url": "https://docs.npmjs.com/"
+            }
+          ]
+        },
+        {
+          "id": "yarn",
+          "title": "yarn",
+          "description": "npm-ийн хувилбар. Хурдан, найдвартай байхаар бүтээгдсэн.",
+          "links": [
+            {
+              "label": "Yarn",
+              "url": "https://yarnpkg.com/"
+            }
+          ]
+        },
+        {
+          "id": "pnpm",
+          "title": "pnpm",
+          "description": "Дискний зай хэмнэдэг, хурдан package manager.",
+          "links": [
+            {
+              "label": "pnpm",
+              "url": "https://pnpm.io/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "framework",
+      "title": "Pick a Framework",
+      "topics": [
+        {
+          "id": "react",
+          "title": "React",
+          "description": "Facebook-ийн UI сан. Компонентод суурилсан, хамгийн их хэрэглэгддэг.",
+          "links": [
+            {
+              "label": "React docs",
+              "url": "https://react.dev/learn"
+            }
+          ]
+        },
+        {
+          "id": "angular",
+          "title": "Angular",
+          "description": "Google-ийн бүрэн framework. TypeScript-тэй.",
+          "links": [
+            {
+              "label": "Angular",
+              "url": "https://angular.dev/"
+            }
+          ]
+        },
+        {
+          "id": "vue",
+          "title": "Vue.js",
+          "description": "Хялбар сурагддаг, уян хатан framework.",
+          "links": [
+            {
+              "label": "Vue.js",
+              "url": "https://vuejs.org/guide/introduction.html"
+            }
+          ]
+        },
+        {
+          "id": "svelte",
+          "title": "Svelte",
+          "description": "Compile хийдэг, бага код бичдэг framework.",
+          "links": [
+            {
+              "label": "Svelte",
+              "url": "https://svelte.dev/docs"
+            }
+          ]
+        },
+        {
+          "id": "solid",
+          "title": "Solid JS",
+          "description": "React-тэй төстэй боловч маш хурдан реактив framework.",
+          "links": [
+            {
+              "label": "Solid",
+              "url": "https://www.solidjs.com/"
+            }
+          ]
+        },
+        {
+          "id": "qwik",
+          "title": "Qwik",
+          "description": "Эхний ачаалалтыг маш хурдан болгодог framework.",
+          "links": [
+            {
+              "label": "Qwik",
+              "url": "https://qwik.dev/docs/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "css-writing",
+      "title": "Writing CSS",
+      "topics": [
+        {
+          "id": "tailwind",
+          "title": "Tailwind",
+          "description": "Utility class-аар (flex, p-4) шууд HTML дотроо загварчилдаг CSS framework.",
+          "links": [
+            {
+              "label": "Tailwind docs",
+              "url": "https://tailwindcss.com/docs"
+            }
+          ]
+        },
+        {
+          "id": "bem",
+          "title": "BEM CSS Architecture",
+          "description": "CSS class нэрлэх аргачлал: block__element--modifier.",
+          "links": [
+            {
+              "label": "BEM",
+              "url": "https://getbem.com/introduction/"
+            }
+          ]
+        },
+        {
+          "id": "sass",
+          "title": "Sass",
+          "description": "CSS-ийг хувьсагч, nesting-тэй бичих боломж олгодог preprocessor.",
+          "links": [
+            {
+              "label": "Sass",
+              "url": "https://sass-lang.com/guide/"
+            }
+          ]
+        },
+        {
+          "id": "postcss",
+          "title": "PostCSS",
+          "description": "JavaScript-ээр CSS-ийг боловсруулдаг хэрэгсэл (autoprefixer гэх мэт).",
+          "links": [
+            {
+              "label": "PostCSS",
+              "url": "https://postcss.org/"
+            }
+          ]
+        },
+        {
+          "id": "css-in-js",
+          "title": "CSS-in-JS, CSS Modules, Styled Components",
+          "description": "Загварыг компонент дотор бичих орчин үеийн аргууд.",
+          "links": [
+            {
+              "label": "CSS Modules",
+              "url": "https://github.com/css-modules/css-modules"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "build",
+      "title": "Build Tools",
+      "topics": [
+        {
+          "id": "prettier",
+          "title": "Prettier",
+          "description": "Кодыг автоматаар нэг загварт форматлана.",
+          "links": [
+            {
+              "label": "Prettier",
+              "url": "https://prettier.io/docs/"
+            }
+          ]
+        },
+        {
+          "id": "eslint",
+          "title": "ESLint",
+          "description": "Кодын алдаа, муу бичлэгийг илрүүлдэг linter.",
+          "links": [
+            {
+              "label": "ESLint",
+              "url": "https://eslint.org/docs/latest/"
+            }
+          ]
+        },
+        {
+          "id": "vite",
+          "title": "Vite",
+          "description": "Маш хурдан dev server ба bundler. Одоо хамгийн түгээмэл.",
+          "links": [
+            {
+              "label": "Vite",
+              "url": "https://vite.dev/guide/"
+            }
+          ]
+        },
+        {
+          "id": "webpack",
+          "title": "Webpack",
+          "description": "Хамгийн түгээмэл module bundler. Олон төслүүд ашигладаг.",
+          "links": [
+            {
+              "label": "Webpack",
+              "url": "https://webpack.js.org/concepts/"
+            }
+          ]
+        },
+        {
+          "id": "rollup",
+          "title": "Rollup",
+          "description": "Сан (library) багцлахад тохиромжтой bundler.",
+          "links": [
+            {
+              "label": "Rollup",
+              "url": "https://rollupjs.org/introduction/"
+            }
+          ]
+        },
+        {
+          "id": "parcel",
+          "title": "Parcel",
+          "description": "Тохиргоо шаардахгүй bundler.",
+          "links": [
+            {
+              "label": "Parcel",
+              "url": "https://parceljs.org/docs/"
+            }
+          ]
+        },
+        {
+          "id": "esbuild",
+          "title": "esbuild",
+          "description": "Go хэл дээр бичигдсэн маш хурдан bundler.",
+          "links": [
+            {
+              "label": "esbuild",
+              "url": "https://esbuild.github.io/"
+            }
+          ]
+        },
+        {
+          "id": "swc",
+          "title": "SWC",
+          "description": "Rust-аар бичигдсэн хурдан JavaScript/TypeScript compiler.",
+          "links": [
+            {
+              "label": "SWC",
+              "url": "https://swc.rs/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "testing",
+      "title": "Testing",
+      "topics": [
+        {
+          "id": "vitest",
+          "title": "Vitest",
+          "description": "Vite-тэй сайн ажилладаг хурдан unit тестийн хэрэгсэл.",
+          "links": [
+            {
+              "label": "Vitest",
+              "url": "https://vitest.dev/guide/"
+            }
+          ]
+        },
+        {
+          "id": "jest",
+          "title": "Jest",
+          "description": "Хамгийн түгээмэл JavaScript тестийн framework.",
+          "links": [
+            {
+              "label": "Jest",
+              "url": "https://jestjs.io/docs/getting-started"
+            }
+          ]
+        },
+        {
+          "id": "playwright",
+          "title": "Playwright",
+          "description": "Браузер дээр бүрэн (end-to-end) тест хийх хэрэгсэл.",
+          "links": [
+            {
+              "label": "Playwright",
+              "url": "https://playwright.dev/docs/intro"
+            }
+          ]
+        },
+        {
+          "id": "cypress",
+          "title": "Cypress",
+          "description": "Браузер дээр end-to-end тест хийх өөр нэг хэрэгсэл.",
+          "links": [
+            {
+              "label": "Cypress",
+              "url": "https://docs.cypress.io/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "auth",
+      "title": "Authentication Strategies",
+      "topics": [
+        {
+          "id": "jwt",
+          "title": "JWT",
+          "description": "JSON Web Token: нэвтэрсэн хэрэглэгчийг баталгаажуулах token.",
+          "links": [
+            {
+              "label": "jwt.io",
+              "url": "https://jwt.io/introduction"
+            }
+          ]
+        },
+        {
+          "id": "oauth",
+          "title": "OAuth",
+          "description": "Google, GitHub-ээр нэвтрэх зэрэг гуравдагч талын эрх олгох стандарт.",
+          "links": [
+            {
+              "label": "OAuth",
+              "url": "https://oauth.net/2/"
+            }
+          ]
+        },
+        {
+          "id": "sso",
+          "title": "SSO",
+          "description": "Single Sign-On: нэг нэвтрэлтээр олон системд орох.",
+          "links": [
+            {
+              "label": "Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Single_sign-on"
+            }
+          ]
+        },
+        {
+          "id": "basic-auth",
+          "title": "Basic Auth",
+          "description": "Хэрэглэгчийн нэр, нууц үгийг HTTP header-ээр илгээх хамгийн энгийн арга.",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication"
+            }
+          ]
+        },
+        {
+          "id": "session-auth",
+          "title": "Session Auth",
+          "description": "Сервер дээр session хадгалж, cookie-ээр хэрэглэгчийг таних арга.",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "title": "Web Security Basics",
+      "topics": [
+        {
+          "id": "cors",
+          "title": "CORS",
+          "description": "Нэг домэйнээс нөгөө домэйн рүү хүсэлт илгээхийг зөвшөөрөх дүрэм.",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS"
+            }
+          ]
+        },
+        {
+          "id": "https",
+          "title": "HTTPS",
+          "description": "Мэдээллийг шифрлэж дамжуулдаг аюулгүй HTTP.",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Glossary/HTTPS"
+            }
+          ]
+        },
+        {
+          "id": "csp",
+          "title": "Content Security Policy",
+          "description": "Хуудас ямар эх сурвалжаас код ачаалахыг хязгаарлаж XSS-ээс хамгаална.",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP"
+            }
+          ]
+        },
+        {
+          "id": "owasp",
+          "title": "OWASP Security Risks",
+          "description": "Вэб аппын хамгийн түгээмэл аюулгүй байдлын эрсдэлүүдийн жагсаалт.",
+          "links": [
+            {
+              "label": "OWASP",
+              "url": "https://owasp.org/www-project-top-ten/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "types",
+      "title": "Type Checkers",
+      "topics": [
+        {
+          "id": "typescript",
+          "title": "TypeScript",
+          "description": "JavaScript дээр төрлийн шалгалт нэмсэн хэл. Алдааг кодоо бичих үед олно.",
+          "links": [
+            {
+              "label": "TypeScript",
+              "url": "https://www.typescriptlang.org/docs/handbook/intro.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "webcomp",
+      "title": "Web Components",
+      "topics": [
+        {
+          "id": "custom-elements",
+          "title": "Custom Elements",
+          "description": "Өөрийн HTML tag (<my-card>) зохиох боломж.",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements"
+            }
+          ]
+        },
+        {
+          "id": "html-templates",
+          "title": "HTML Templates",
+          "description": "<template> tag: дахин ашиглах HTML бүтэц.",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/template"
+            }
+          ]
+        },
+        {
+          "id": "shadow-dom",
+          "title": "Shadow DOM",
+          "description": "Компонентын загвар, кодыг гаднаас тусгаарлах механизм.",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ssr",
+      "title": "SSR (Server Side Rendering)",
+      "topics": [
+        {
+          "id": "nextjs",
+          "title": "Next.js",
+          "description": "React дээр суурилсан framework. Routing, server component, API route бэлэн.",
+          "links": [
+            {
+              "label": "Next.js",
+              "url": "https://nextjs.org/docs"
+            }
+          ]
+        },
+        {
+          "id": "nuxt",
+          "title": "Nuxt.js",
+          "description": "Vue дээр суурилсан framework.",
+          "links": [
+            {
+              "label": "Nuxt",
+              "url": "https://nuxt.com/docs"
+            }
+          ]
+        },
+        {
+          "id": "sveltekit",
+          "title": "SvelteKit",
+          "description": "Svelte-ийн full-stack framework.",
+          "links": [
+            {
+              "label": "SvelteKit",
+              "url": "https://svelte.dev/docs/kit"
+            }
+          ]
+        },
+        {
+          "id": "react-router",
+          "title": "react-router",
+          "description": "React аппад олон хуудас (routing) нэмэх сан.",
+          "links": [
+            {
+              "label": "React Router",
+              "url": "https://reactrouter.com/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "graphql",
+      "title": "GraphQL",
+      "topics": [
+        {
+          "id": "graphql-basics",
+          "title": "GraphQL",
+          "description": "REST-ийн оронд хэрэгтэй өгөгдлөө яг зааж асуух query хэл.",
+          "links": [
+            {
+              "label": "GraphQL",
+              "url": "https://graphql.org/learn/"
+            }
+          ]
+        },
+        {
+          "id": "apollo",
+          "title": "Apollo",
+          "description": "GraphQL-тэй ажиллах хамгийн түгээмэл client сан.",
+          "links": [
+            {
+              "label": "Apollo",
+              "url": "https://www.apollographql.com/docs/react"
+            }
+          ]
+        },
+        {
+          "id": "relay",
+          "title": "Relay Modern",
+          "description": "Facebook-ийн GraphQL client.",
+          "links": [
+            {
+              "label": "Relay",
+              "url": "https://relay.dev/docs/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ssg",
+      "title": "Static Site Generators",
+      "topics": [
+        {
+          "id": "astro",
+          "title": "Astro",
+          "description": "Контентод төвлөрсөн, хурдан статик сайт хийх framework.",
+          "links": [
+            {
+              "label": "Astro",
+              "url": "https://docs.astro.build/"
+            }
+          ]
+        },
+        {
+          "id": "eleventy",
+          "title": "Eleventy",
+          "description": "Энгийн, уян хатан статик сайт generator.",
+          "links": [
+            {
+              "label": "Eleventy",
+              "url": "https://www.11ty.dev/docs/"
+            }
+          ]
+        },
+        {
+          "id": "vuepress",
+          "title": "Vuepress",
+          "description": "Vue-д суурилсан документ сайт хийх хэрэгсэл.",
+          "links": [
+            {
+              "label": "VuePress",
+              "url": "https://vuepress.vuejs.org/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apps",
+      "title": "PWAs, Mobile and Desktop Apps",
+      "topics": [
+        {
+          "id": "pwa",
+          "title": "PWAs",
+          "description": "Вэб сайтыг утсанд суулгадаг апп шиг болгох технологи.",
+          "links": [
+            {
+              "label": "web.dev",
+              "url": "https://web.dev/explore/progressive-web-apps"
+            }
+          ]
+        },
+        {
+          "id": "react-native",
+          "title": "React Native",
+          "description": "React-аар утасны апп хийх.",
+          "links": [
+            {
+              "label": "React Native",
+              "url": "https://reactnative.dev/docs/getting-started"
+            }
+          ]
+        },
+        {
+          "id": "flutter",
+          "title": "Flutter",
+          "description": "Google-ийн олон платформын апп хийх framework.",
+          "links": [
+            {
+              "label": "Flutter",
+              "url": "https://docs.flutter.dev/"
+            }
+          ]
+        },
+        {
+          "id": "ionic",
+          "title": "Ionic",
+          "description": "Вэб технологиор утасны апп хийх framework.",
+          "links": [
+            {
+              "label": "Ionic",
+              "url": "https://ionicframework.com/docs"
+            }
+          ]
+        },
+        {
+          "id": "electron",
+          "title": "Electron",
+          "description": "Вэб технологиор компьютерийн апп хийх.",
+          "links": [
+            {
+              "label": "Electron",
+              "url": "https://www.electronjs.org/docs/latest/"
+            }
+          ]
+        },
+        {
+          "id": "tauri",
+          "title": "Tauri",
+          "description": "Electron-ы хөнгөн хувилбар, Rust дээр суурилсан.",
+          "links": [
+            {
+              "label": "Tauri",
+              "url": "https://tauri.app/start/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "perf",
+      "title": "Measure and Improve Performance",
+      "topics": [
+        {
+          "id": "prpl",
+          "title": "PRPL Pattern",
+          "description": "Push, Render, Pre-cache, Lazy-load: вэб ачаалалтыг хурдасгах загвар.",
+          "links": [
+            {
+              "label": "web.dev",
+              "url": "https://web.dev/articles/apply-instant-loading-with-prpl"
+            }
+          ]
+        },
+        {
+          "id": "rail",
+          "title": "RAIL Model",
+          "description": "Response, Animation, Idle, Load: хэрэглэгчийн мэдрэмжид төвлөрсөн хурдны загвар.",
+          "links": [
+            {
+              "label": "web.dev",
+              "url": "https://web.dev/articles/rail"
+            }
+          ]
+        },
+        {
+          "id": "metrics",
+          "title": "Performance Metrics",
+          "description": "LCP, CLS, INP зэрэг сайтын хурдыг хэмждэг үзүүлэлтүүд.",
+          "links": [
+            {
+              "label": "web.dev",
+              "url": "https://web.dev/articles/vitals"
+            }
+          ]
+        },
+        {
+          "id": "lighthouse",
+          "title": "Using Lighthouse",
+          "description": "Сайтын хурд, хүртээмж, SEO-г шалгаж оноо өгдөг хэрэгсэл.",
+          "links": [
+            {
+              "label": "Chrome Docs",
+              "url": "https://developer.chrome.com/docs/lighthouse/overview"
+            }
+          ]
+        },
+        {
+          "id": "devtools",
+          "title": "Using DevTools",
+          "description": "Браузерийн хөгжүүлэгчийн хэрэгсэл: Network, Performance, Elements.",
+          "links": [
+            {
+              "label": "Chrome Docs",
+              "url": "https://developer.chrome.com/docs/devtools"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "browser-apis",
+      "title": "Browser APIs",
+      "topics": [
+        {
+          "id": "storage",
+          "title": "Storage",
+          "description": "localStorage, sessionStorage, IndexedDB, cookies: хөтөч дээр өгөгдөл хадгалах.",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API"
+            }
+          ]
+        },
+        {
+          "id": "websockets",
+          "title": "Web Sockets",
+          "description": "Сервертэй хоёр чиглэлт, бодит цагийн холболт (чат гэх мэт).",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API"
+            }
+          ]
+        },
+        {
+          "id": "sse",
+          "title": "Server Sent Events",
+          "description": "Серверээс браузер рүү нэг чиглэлд бодит цагт мэдээлэл түлхэх.",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events"
+            }
+          ]
+        },
+        {
+          "id": "service-workers",
+          "title": "Service Workers",
+          "description": "Сүлжээний хүсэлтийг завсар барьж offline ажиллагаа өгдөг скрипт.",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API"
+            }
+          ]
+        },
+        {
+          "id": "location",
+          "title": "Location",
+          "description": "Geolocation API: хэрэглэгчийн байршлыг (зөвшөөрөлтэй) авах.",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API"
+            }
+          ]
+        },
+        {
+          "id": "notifications",
+          "title": "Notifications",
+          "description": "Хэрэглэгчид браузерийн мэдэгдэл харуулах.",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API"
+            }
+          ]
+        },
+        {
+          "id": "orientation",
+          "title": "Device Orientation",
+          "description": "Төхөөрөмжийн хазайлт, чиглэлийг унших.",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Device_orientation_events"
+            }
+          ]
+        },
+        {
+          "id": "payments",
+          "title": "Payments",
+          "description": "Payment Request API: төлбөр хийх стандарт интерфэйс.",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Payment_Request_API"
+            }
+          ]
+        },
+        {
+          "id": "credentials",
+          "title": "Credentials",
+          "description": "Credential Management API: нэвтрэх мэдээллийг аюулгүй удирдах.",
+          "links": [
+            {
+              "label": "MDN",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/Credential_Management_API"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
